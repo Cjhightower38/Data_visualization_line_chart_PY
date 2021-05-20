@@ -1,8 +1,12 @@
 # Using the scatter()
 import matplotlib.pyplot as plt
 
+# X_values are the numbers to be squared and Y_values are the squares.
+x_values = [1, 2, 3, 4, 5]
+y_values = [1, 4, 9, 16, 25]
+
 # S = set the size of the dot.
-plt.scatter(2, 4, s = 200)
+plt.scatter(x_values, y_values, s = 100)
 
 # Set chart title and label axes.
 plt.title('Square Numbers', fontsize = 24)
