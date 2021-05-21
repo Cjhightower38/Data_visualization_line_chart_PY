@@ -10,7 +10,12 @@ x_values = list(range(1, 1001))
 y_values = [x**2 for x in x_values]
 
 # S = set the size of the dot.
-plt.scatter(x_values, y_values, edgecolor = 'none', s = 40)
+'''
+The c argument can be a colors name or RGB(0-1) example c=(0, 0, 0.8)
+and edgecolor is the black outline from the data points.
+'''
+
+plt.scatter(x_values, y_values, c = 'red', edgecolor = 'none', s = 40)
 
 # Set chart title and label axes.
 plt.title('Square Numbers', fontsize = 24)
