@@ -15,7 +15,13 @@ The c argument can be a colors name or RGB(0-1) example c=(0, 0, 0.8)
 and edgecolor is the black outline from the data points.
 '''
 
-plt.scatter(x_values, y_values, c = 'red', edgecolor = 'none', s = 40)
+'''
+Colormap can be given as a X or Y value assigned to c argument and given
+a colors name example c=(x or y_values), cmap=plt.cm.(colors name)
+'''
+
+plt.scatter(x_values, y_values, c = y_values, cmap = plt.cm.Blues,
+    edgecolor = 'none', s = 40)
 
 # Set chart title and label axes.
 plt.title('Square Numbers', fontsize = 24)
