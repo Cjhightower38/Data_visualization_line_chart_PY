@@ -39,5 +39,12 @@ y_values.
 
 plt.axis([0, 1100, 0, 1100000])
 
-plt.show()
+#plt.show()
+
+'''
+To save plots to files automatically replace to show() with savefig().
+example plt.savefig(filename, whitespace) as arguments.
+'''
+
+plt.savefig('squares_plot.png', bbox_inches = 'tight')
 
